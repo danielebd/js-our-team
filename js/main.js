@@ -40,13 +40,31 @@ const team = [
 
 ]
 
-function mylog (position){
-    const object = [team[position].name, team[position].ruolo, team[position].img];
+function name (position){
+    const object = [team[position].name,];
     return object;
 }
-const nodelist = document.querySelectorAll('div.member');
+function role (position){
+    const object = [team[position].ruolo,];
+    return object;
+}
+function img (position){
+    const object = [team[position].img,];
+    return object;
+}
+
+
+const nodelistName = document.querySelectorAll('div.name');
 for(let i = 0; i < team.length; i++){
-    //nodelist[i].innerHTML = mylog(i);
+    nodelistName[i].innerHTML = name(i);
+}
+const nodelistRole = document.querySelectorAll('div.role');
+for(let i = 0; i < team.length; i++){
+    nodelistRole[i].innerHTML = role(i);
+}
+const nodelistImg = document.querySelectorAll('.img-container');
+for(let i = 0; i < team.length; i++){
+    nodelistImg[i].innerHTML = `<img src="img/${img(i)}" class="card-img-top">`;
 }
 
 
