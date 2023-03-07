@@ -46,7 +46,7 @@ function mylog (position){
 }
 const nodelist = document.querySelectorAll('div.member');
 for(let i = 0; i < team.length; i++){
-    nodelist[i].innerHTML = mylog(i);
+    //nodelist[i].innerHTML = mylog(i);
 }
 
 

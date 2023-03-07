@@ -3,3 +3,9 @@
     margin: 0;
     padding: 0;
 }
+.mycontainer {
+    max-width: 31.25rem;
+}
+.col-4 {
+    background-color: antiquewhite;
+}
